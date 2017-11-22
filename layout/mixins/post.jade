@@ -16,7 +16,11 @@ mixin posts()
                     +postInfo(item)
                     .post-content
                         != item.excerpt
-                    a.read-more(href= url_for(item.path))!= __('more')
+                    a.read-more(href= url_for(item.path))!= __('more')    
+                    if item.tags
+                        .post-tag
+                            for tag in item.tags.toArray()
+                                a(href=url_for(tag.path))=  '#' + tag.name
         - })
 
 //- Archive Page
@@ -36,12 +40,31 @@ mixin postList()
                     != item.title
         - })
 
+
+//- Tag Page
+mixin tagsList()
+    .archive
+        for tag in site.tags.toArray()
+            .post-item
+                .post-info= 'count: ' + tag.length
+                a.post-title-link(href=url_for(tag.path))= tag.name 
+
+
+mixin categoriesList()
+    .tags
+        for categories in site.categories.toArray()
+            a(href=url_for(tag.path))=  '#' + tag.name 
+
 //- Post Page
 mixin post(item)
     .post
         article.post-block
             h1.post-title
                 != item.title
+            if item.tags
+                for tag in item.tags.toArray()
+                    a(href=url_for(tag.path))=  '#' + tag.name
             +postInfo(item)
             .post-content
                 != item.content
+           

@@ -1,21 +1,20 @@
 menu:
     Blog: /
     Archive: /archives/
-    Weibo: http://weibo.com/sunchongsheng
-    GitHub: https://github.com/pinggod
+    Tag: /tags/
+    GitHub: https://github.com/maohhgg
     Rss: /atom.xml
 
-favicon: /favicon.png
+favicon: /favicon.ico
 logo: /favicon.png
 
 # Comment
 # e.g disqus: seansun
-disqus:
-duoshuo:
+disqus: maohhgg
 
 # Analytics
 # google-analytics:
-ga: UA-65933410-1
+ga: UA-110078780-1
 
 # Copyright Infomation
 startyear: 2015
