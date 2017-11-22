@@ -7,7 +7,9 @@
 
 ## 贡献
 
-该项目不再接受添加新特性、功能的 pull request，所有创造性的想法请 fork 该项目之后自由发挥。
+该项目不再接受添加新特性、功能的 pull request，所有创造性的想法请 fork 该项目之后自由发挥。-> 原[pinggod/hexo-theme-apollo](https://github.com/pinggod/hexo-theme-apollo)
+
+[pinggod/hexo-theme-apollo](https://github.com/pinggod/hexo-theme-apollo) --fork--> [maohhgg/hexo-theme-apollo](https://github.com/pinggod/hexo-theme-apollo)
 
 ## 安装
 
