@@ -8,6 +8,9 @@ menu:
 favicon: /favicon.ico
 logo: /favicon.png
 
+# Tag heat
+tag: 3
+
 # Comment
 # e.g disqus: seansun
 disqus: maohhgg

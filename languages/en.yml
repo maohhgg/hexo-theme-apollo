@@ -3,3 +3,6 @@ next: NEXT
 prev_post: PREV
 next_post: NEXT
 more: ...more
+hot: Popular
+unpopular: Unpopular
+article: article
