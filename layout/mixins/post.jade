@@ -16,11 +16,7 @@ mixin posts()
                     +postInfo(item)
                     .post-content
                         != item.excerpt
-                    a.read-more(href= url_for(item.path))!= __('more')    
-                    if item.tags
-                        .post-tag
-                            for tag in item.tags.toArray()
-                                a(href=url_for(tag.path))=  '#' + tag.name
+                    a.read-more(href= url_for(item.path))!= __('more')
         - })
 
 //- Archive Page
@@ -75,8 +71,9 @@ mixin post(item)
             h1.post-title
                 != item.title
             if item.tags
-                for tag in item.tags.toArray()
-                    a(href=url_for(tag.path))=  '#' + tag.name
+                .post-tags
+                    for tag in item.tags.toArray()
+                        a(href=url_for(tag.path))=  '#' + tag.name
             +postInfo(item)
             .post-content
                 != item.content
