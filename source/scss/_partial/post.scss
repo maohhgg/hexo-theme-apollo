@@ -8,6 +8,14 @@
         color: #2c3e50;
         font-size: 1.5em;
     }
+    .post-tags {
+        font-size: 1em;
+        a {
+            color: #42b983;
+            font-weight: 700;
+            margin-right: 10px;
+        }
+    }
 
     .post-info {
         color: #7f8c8d;
@@ -124,6 +132,7 @@ pre {
 .highlight {
     position: relative;
     margin: 1em 0;
+    padding: 1.2em 1.4em;
     border-radius: 2px;
     line-height: 1.1em;
     background-color: #f8f8f8;
@@ -138,12 +147,14 @@ pre {
         display: none;
     }
     .code pre {
-        padding: 1.2em 1.4em;
         line-height: 1.5em;
         margin: 0;
         .line {
+            white-space: pre-wrap;       /* Since CSS 2.1 */
+            white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
             width: auto;
             height: 18px;
+            display: inline-block;
         }
     }
 }
